@@ -13,13 +13,13 @@
 %Set variables
 %You can add sections, texts, explanations just by copying the style below. Replace the dummy texts "\lipsum[1][x-x]\par" with actual texts.
 %Create header
-% \headerview
+\headerview
 \vspace{1ex}
 %Sections
 %
 % Summary
 \addblocktext{Summary}{%
-\lipsum[1][1-12]\ %replace this part with actual text
+  I'm a C++ developer with some experience of Python and a big passion for functional programming/Haskell. My favorite topics include distributed systems (with specialized education) and compilers (as an amateur).
 }
 %
 %Education
@@ -69,18 +69,9 @@
 % Experience
 \section{Extra}
     \newcommand{\extraone}{%
-    \lipsum[1][7-8]\par %replace this part with actual text
+        I also love algebra, and have quite a bit of experience there. \href{https://github.com/neclitoris/groebner}{Here}'s my algebra project written in Haskell for my coursework. It's actually quite impressive --- performance outclasses similar C++ projects, and EDSL it provides is nice (for my taste).
     }
-    %
-    \newcommand{\extratwo}{%
-    \lipsum[1][9-10]\par %replace this part with actual text
-    }
-    %
-    \newcommand{\extrathree}{%
-    \lipsum[1][11-12]%replace this part with actual text
-    }
-    %
-    \newcommand{\listofextras}{\extraone, \extratwo, \extrathree}
+    \newcommand{\listofextras}{\extraone}
     %
     \createbullets{\listofextras}
 %

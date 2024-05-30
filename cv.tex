@@ -1,10 +1,11 @@
 \documentclass{template}
 
-\setname{Nikita}{Solodovnikov}
-\setaddress{Moscow}
+\rutrue
+
+\setname{\en{Nikita}\ru{Никита}}{\en{Solodovnikov}\ru{Солодовников}}
+\setaddress{\en{Moscow}\ru{Москва}}
 \setmobile{}
-\setmail{}
-\setposition{Work Student} %ignored for now
+\setmail{nas140301@gmail.com}
 \setlinkedinaccount{} %you can play with color of the template (red is also nice..)
 \setgithubaccount{https://github.com/neclitoris} %you can play with color of the template (red is also nice..)
 \setthemecolor{red} %you can play with color of the template (red is also nice..)
@@ -18,58 +19,65 @@
 %Sections
 %
 % Summary
-\addblocktext{Summary}{%
-  I'm a C++ developer with some experience of Python and a big passion for functional programming/Haskell. My favorite topics include distributed systems (with specialized education) and compilers (as an amateur).
+\addblocktext{\en{Summary}\ru{Вкратце}}{%
+  \en{I'm a C++ developer with some experience of Python and a big passion for functional programming/Haskell. My favorite topics include distributed systems (with specialized education) and compilers (as an amateur).}
+  \ru{Я --- программист на C++ с некоторым опытом на Python и большой любовью к функциональному программированию на Haskell. Мои основные темы --- распределённые системы (проходил эту специализацию в вузе) и компиляторы (любимая мной тема).}
 }
 %
 %Education
-\section{Education}
-    \datedexperience{Higher School of Economics}{2018--present}
-    \explanation{B.S in Applied Mathematics and Informatics}
+\section{\en{Education}\ru{Образование}}
+\datedexperience{\en{Higher School of Economics}\ru{ФКН ВШЭ}}{2018--\en{present}\ru{н.в.}}
+\explanation{\en{B.S in Applied Mathematics and Informatics}\ru{Бакалавриат: Прикладная математика и информатика}}
      \explanationdetail{
+     \en{
          \textbf{\emph{Specialization:}} Distributed systems
+     }\ru{
+         \textbf{\emph{Специализация:}} Распределённые системы
+     }
      }
 %
 % Experience
-\section{Experience}
+ \section{\en{Experience}\ru{Опыт}}
     %
-    \datedexperience{Yandex}{Summer 2019}
-    \explanation{C++ intern}
+ \datedexperience{\en{Yandex}\ru{Яндекс}}{\en{Summer}\ru{лето} 2019}
+    \explanation{\en{C++ intern}\ru{Стажёр, C++}}
     \explanationdetail{
-     \coloredbullet \ Distributed systems
-     \coloredbullet \ Build systems
+        \coloredbullet \ \en{Distributed systems}\ru{Распределённые системы}
+        \coloredbullet \ \en{Build systems}\ru{Системы сборки}
     }
     %
-    \datedexperience{Kaspersky}{Fall 2020--Spring 2022}
-    \explanation{Haskell/research intern}
+    \datedexperience{Kaspersky}{\en{Fall}\ru{осень} 2020--\en{Spring}\ru{весна} 2022}
+    \explanation{\en{Haskell/research intern}\ru{Стажёр, Haskell}}
     \explanationdetail{
-     \coloredbullet \ Compilers
+        \coloredbullet \ \en{Compilers}\ru{Компиляторы}
     }
     %
-    \datedexperience{Yandex}{Summer 2022--Spring 2023}
+    \datedexperience{\en{Yandex}\ru{Яндекс}}{\en{Summer}\ru{лето} 2022--\en{Spring}\ru{весна} 2023}
     \explanation{C++ junior}
     \explanationdetail{
-     \coloredbullet \ Distributed systems
+     \coloredbullet \ \en{Distributed systems}\ru{Распределённые системы}
      \coloredbullet \ Geo
     }
 %
 % Skills
-\section{Skills}
+\section{\en{Skills}\ru{Навыки}}
     %
-    \newcommand{\skillone}{\createskill{Programming Languages}{\textbf{\emph{Experienced:}} \ \  C++ \cpshalf \ Haskell \ \ \textbf{\emph{Familiar:}} \ \  Javascript \cpshalf \ Python \cpshalf \ Bash }}
+    \newcommand{\skillone}{\createskill{\en{Programming Languages}\ru{Языки программирования}}{\textbf{\emph{\en{Experienced:}\ru{Основной опыт:}}} \ \  C++ \cpshalf \ Haskell \ \ \textbf{\emph{\en{Familiar:}\ru{Знаком:}}} \ \  Javascript \cpshalf \ Python \cpshalf \ Bash }}
     %
-    \newcommand{\skilltwo}{\createskill{Software Development}{OOP \cpshalf\ FP \cpshalf\ GIT \cpshalf\ CLI \cpshalf\ Linux \cpshalf\ Distributed systems}}
+    \newcommand{\skilltwo}{\createskill{\en{Software Development}\ru{Технологии}}{
+    \begin{tabular}{@{}l@{}}
+        \en{OOP}\ru{ООП} \cpshalf\ \en{FP}\ru{Функциональное программирование} \cpshalf\ GIT \cpshalf\ CLI \cpshalf\ Linux \\ \en{Distributed systems}\ru{Распределённые системы}}
+    \end{tabular}}
     %
-    \newcommand{\skillthree}{\createskill{Frameworks \ \& \ Libraries}{STL \cpshalf\ Boost \cpshalf\ GDAL \cpshalf\ NumPy}}
+    \newcommand{\skillthree}{\createskill{\en{Frameworks \ \& \ Libraries}\ru{Библиотеки}}{STL \cpshalf\ Boost \cpshalf\ GDAL \cpshalf\ NumPy}}
     %
-    \newcommand{\skillfour}{\createskill{Languages}{\textbf{\emph{Native:}} \ \  Russian \ \ \textbf{\emph{Fluent:}} \ \ English }}
-    %
-    \createskills{\skillone, \skilltwo, \skillthree, \skillfour}
+    \createskills{\skillone, \skilltwo, \skillthree}
 %
 % Experience
-\section{Extra}
+\section{\en{Extra}\ru{Дополнительно}}
     \newcommand{\extraone}{%
-        I also love algebra, and have quite a bit of experience there. \href{https://github.com/neclitoris/groebner}{Here}'s my algebra project written in Haskell for my coursework. It's actually quite impressive --- performance outclasses similar C++ projects, and EDSL it provides is nice (for my taste).
+        \en{I also love algebra, and have quite a bit of experience there. \href{https://github.com/neclitoris/groebner}{Here}'s my algebra project written in Haskell for my coursework. It's actually quite impressive --- performance outclasses similar C++ projects, and EDSL it provides is nice (for my taste).}
+        \ru{А ещё я люблю алгебру, и даже немного её знаю. \href{https://github.com/neclitoris/groebner}{Вот} мой проект по алгебре, написанный на Haskell для курсовой. Довольно классный --- производительнее и удобнее похожих проектов на C++.}
     }
     \newcommand{\listofextras}{\extraone}
     %

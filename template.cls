@@ -7,7 +7,8 @@
 \LoadClass[12pt]{article}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{muratcan_cv}[2020/04/15 Muratcan CV Class]
-\RequirePackage[T1]{fontenc}
+\RequirePackage[T2A]{fontenc}
+\RequirePackage[russian,english]{babel}
 \RequirePackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 \RequirePackage{etoolbox}
@@ -50,11 +51,9 @@
 
 % can makebox also be used?
 \newcommand\headerview{
-\begin{minipage}{0.25\linewidth}
-\end{minipage}%
 \hfill
-\begin{minipage}{0.45\linewidth}
-    \center \name \\[0.05cm]
+\begin{minipage}{\linewidth}
+    \center \name \\
     \contact % address \ mobile \\ mail
 \end{minipage}
 }
@@ -83,9 +82,8 @@
 }
 
 \newcommand{\contact}{%
-        {\small \@address  \cps \@mobile \\ \@mail%
+        {\small \@address \\ \@mail%
         \\%
-        \linkedinview \cps \githubview \\ 
         } %
 }
 
@@ -195,3 +193,11 @@ Position: & \@claimedposition \\
   \renewcommand{\footnotesize}{\fontsize{7pt}{11pt}\selectfont}
     \renewcommand\footnoterule{\rule{0.3\linewidth}{0.5pt}}
     \let\thefootnote\relax\footnote{\today\ / \href{https://github.com/muratcankaracabey/latex_cv}{source code}}}
+
+% translations
+
+\newif\ifen
+\newif\ifru
+
+\newcommand\en[1]{\ifen#1\fi}
+\newcommand\ru[1]{\ifru#1\fi}
